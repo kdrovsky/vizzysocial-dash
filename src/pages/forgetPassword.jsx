@@ -47,8 +47,8 @@ export default function ForgetPassword() {
         <div className="flex flex-col items-center justify-center h-screen">
             <div className="p-5 rounded-lg shadow-lg">
                 <div className="flex flex-col items-center justify-center pb-10">
-                    {/* <img className="w-48 h-40 mt-10 lg:mt-14" src={sproutyLogo} alt="sprouty social" /> */}
-                    <div className="font-MADEOKINESANSPERSONALUSE text-[28px]"><strong className="text-[25px] text-left">SPROUTYSOCIAL</strong></div>
+                    {/* <img className="w-48 h-40 mt-10 lg:mt-14" src={sproutyLogo} alt="Vizzy Social" /> */}
+                    <div className="font-MADEOKINESANSPERSONALUSE text-[28px]"><strong className="text-[25px] text-left uppercase">Vizzysocial</strong></div>
                     <hr className="mb-7 w-full border-[#ef5f3c]" />
 
                     <h5 className="font-bold text-[2.625rem] text-black font-MADEOKINESANSPERSONALUSE">Forgot Password?</h5>

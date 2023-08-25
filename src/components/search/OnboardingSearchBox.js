@@ -249,7 +249,7 @@ export default function OnboardingSearchBox({ user, currentUsername }) {
         <div className="flex flex-col justify-between h-full px-5 pb-4 lg:justify-center lg:items-center text-start lg:text-center lg:px-0">
           <div className="block lg:flex flex-col lg:justify-center lg:items-center pb-[80px]">
             <h1 className='font-bold text-black font-MontserratBold text-[26px] pb-3'>Search your account</h1>
-            <p className='text-[0.875rem] font-MontserratRegular lg:px-[100px]'>Find your Instagram account and start growing followers with <br className='hidden lg:block' /> Sprouty Social</p>
+            <p className='text-[0.875rem] font-MontserratRegular lg:px-[100px]'>Find your Instagram account and start growing followers with <br className='hidden lg:block' /> Vizzy Social</p>
 
             <div className="flex flex-col justify-between mt-3 lg:block">
               <div className="flex flex-col items-center justify-between h-full w-full lg:h-fit lg:w-[411px] relative" ref={parentRef}>
