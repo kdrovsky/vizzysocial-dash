@@ -1,9 +1,11 @@
 
+export const SITENAME = "vizzysocial"
 
-export const LOGO = "/logo.png";
-export const LOGO_WITH_NAME = "/sproutysocial-light.svg"
+// export const LOGO = "/logo.png";
+export const LOGO = "/logo_without_text_and_tagline.png";
+export const LOGO_WITH_NAME = "/color_logo_on_white.png"
 export const ANALYST_NAME = "Mike P"
-export const EMAIL = "support@sproutysocial.com"
+export const EMAIL = "support@vizzysocial.com"
 
 export const SCRAPER_API_URL = process.env.REACT_APP_SCRAPER_API_URL
 export const X_RAPID_API_KEY = process.env.REACT_APP_X_RAPID_API_KEY
@@ -27,7 +29,7 @@ export const INCORRECT_PASSWORD_TEMPLATE = (full_name, username) => {
 
 <p class="MsoNormal"><span lang="EN">We regret to inform you that the password
 provided for @<b>${username}</b>, to access our service is incorrect. We kindly request
-you to attempt re-logging into your dashboard by following this <a href="http://app.sproutysocial.com"><span style="color:#1155CC">link</span></a>.
+you to attempt re-logging into your dashboard by following this <a href="http://app.vizzysocial.com"><span style="color:#1155CC">link</span></a>.
 Once the correct password is provided, our team will proceed to log in to your
 account within the next 24 hours.</span></p>
 
@@ -40,7 +42,7 @@ do not hesitate to contact us at ${EMAIL}.</span></p>
 
 <p class="MsoNormal"><span lang="EN">Best regards,</span></p>
 
-<p class="MsoNormal"><span class="SpellE"><span lang="EN">SproutySocial</span></span><span lang="EN"> Team</span></p>
+<p class="MsoNormal"><span class="SpellE"><span lang="EN">vizzysocial</span></span><span lang="EN"> Team</span></p>
 </div>
 `
 }
@@ -85,7 +87,7 @@ export const TWO_FACTOR_TEMPLATE = (full_name, username) => {
         select "Backup codes".<o:p /></span></p>
 
         <p class="MsoNormal"><span lang="EN">5. Copy one 8-digit code and paste it into
-        your <span class="SpellE">SproutySocial</span> dashboard.<o:p /></span></p>
+        your <span class="SpellE">vizzysocial</span> dashboard.<o:p /></span></p>
 
         <p class="MsoNormal"><span lang="EN"><o:p> </o:p></span></p>
 
@@ -100,7 +102,7 @@ export const TWO_FACTOR_TEMPLATE = (full_name, username) => {
         <p class="MsoNormal"><span lang="EN"><o:p> </o:p></span></p>
 
         <p class="MsoNormal"><span lang="EN">After completing the steps above we kindly
-        request you to attempt re-logging into your dashboard by following this <a href="https://app.sproutysocial.com/">link</a></span></p>
+        request you to attempt re-logging into your dashboard by following this <a href="https://app.vizzysocial.com/">link</a></span></p>
 
         <p class="MsoNormal"><span lang="EN"><o:p> </o:p></span></p>
 
@@ -120,7 +122,7 @@ export const TWO_FACTOR_TEMPLATE = (full_name, username) => {
 
         <p class="MsoNormal"><span lang="EN">Kind regards,<o:p /></span></p>
 
-        <p class="MsoNormal"><span class="SpellE"><span lang="EN">SproutySocial</span></span><span lang="EN"> Team</span></p>
+        <p class="MsoNormal"><span class="SpellE"><span lang="EN">vizzysocial</span></span><span lang="EN"> Team</span></p>
 
         <p class="MsoNormal"><span lang="EN"><o:p> </o:p></span></p>
 
@@ -139,7 +141,7 @@ export const NOT_CONNECTED_TEMPLATE = (full_name) => {
 <p class="MsoNormal"><span lang="EN">We would like to bring to your attention that
 you are currently not connected to our service. We kindly request you to
 establish the connection at your earliest convenience by clicking on the
-provided <a href="http://app.sproutysocial.com"><span style="color:#1155CC">link</span></a>.
+provided <a href="http://app.vizzysocial.com"><span style="color:#1155CC">link</span></a>.
 By doing so, we can promptly initiate the growth process for your account.</span></p>
 
 <p class="MsoNormal"><span lang="EN"><o:p>&nbsp;</o:p></span></p>
@@ -177,7 +179,7 @@ you with the support you need.</span></p>
 
 <p class="MsoNormal"><span lang="EN">Kind regards,</span></p>
 
-<p class="MsoNormal"><span class="SpellE"><span lang="EN">SproutySocial</span></span><span lang="EN"> Team.</span></p>
+<p class="MsoNormal"><span class="SpellE"><span lang="EN">vizzysocial</span></span><span lang="EN"> Team.</span></p>
 </div>
 `
 }
@@ -190,21 +192,21 @@ export const ACTIVE_TEMPLATE = (full_name, username) => {
             <p className="MsoNormal"><span lang="EN"><o:p> </o:p></span></p>
 
             <p className="MsoNormal"><span lang="EN">We are thrilled to inform you that your
-            account <b>@${username}</b> has been successfully linked with <span className="SpellE">SproutySocial</span>!
+            account <b>@${username}</b> has been successfully linked with <span className="SpellE">vizzysocial</span>!
             You can expect to witness growth within just 12 hours on your account. Should
             you have any inquiries or require any assistance, please don't hesitate to
             reach out to us at <a href='mailto:${EMAIL}'>${EMAIL}</a>.<o:p /></span></p>
 
             <p className="MsoNormal"><span lang="EN"><o:p> </o:p></span></p>
 
-            <p className="MsoNormal"><span lang="EN">Thank you for choosing <span className="SpellE">SproutySocial</span>
+            <p className="MsoNormal"><span lang="EN">Thank you for choosing <span className="SpellE">vizzysocial</span>
             to enhance your social media experience!<o:p /></span></p>
 
             <p className="MsoNormal"><span lang="EN"><o:p> </o:p></span></p>
 
             <p className="MsoNormal"><span lang="EN">Best Regards,<o:p /></span></p>
 
-            <p className="MsoNormal"><span lang="EN">The <span className="SpellE">SproutySocial</span>
+            <p className="MsoNormal"><span lang="EN">The <span className="SpellE">vizzysocial</span>
             Team</span></p>
         </div>
     `
@@ -243,7 +245,7 @@ export const CHECKING_TEMPLATE = (full_name, username) => {
 
             <p className="MsoNormal" style={{ lineHeight: "150%" }}>After completing the steps above we
             kindly request you to attempt re-logging into your dashboard by following this
-            <a href="app.sproutysocial.com">link</a><o:p /></p>
+            <a href="app.vizzysocial.com">link</a><o:p /></p>
 
             <p className="MsoNormal" style={{ lineHeight: "150%" }}>If you have any concerns or require
             further assistance, please do not hesitate to reach out to us at
@@ -255,7 +257,7 @@ export const CHECKING_TEMPLATE = (full_name, username) => {
 
             <p className="MsoNormal" style={{ lineHeight: "150%" }}>Kind regards,<o:p /></p>
 
-            <p className="MsoNormal" style={{ lineHeight: "150%" }}><span className="SpellE">SproutySocial</span>
+            <p className="MsoNormal" style={{ lineHeight: "150%" }}><span className="SpellE">vizzysocial</span>
             Team</p>
 
             </div>

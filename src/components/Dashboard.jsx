@@ -19,7 +19,7 @@ import SettingsModal from './SettingsModal'
 import GrowthChart from "./GrowthChart";
 import ColumnChart from "./ColumnChart";
 import AlertModal from "./AlertModal";
-import { ANALYST_NAME, LOGO } from "../config";
+import { ANALYST_NAME, LOGO, SITENAME } from "../config";
 // import WelcomeModal from "./WelcomeModal";
 
 const Error = ({ value }) => {
@@ -1492,7 +1492,7 @@ const TargetingCompt = ({ user, setMobileAdd }) => {
 
 const WhiteListCompt = ({ user, userId, setMobileAdd }) => {
   const [total, setTotal] = useState({ whitelist: 0, blacklist: 0 })
-  const [pageProp, setPageProp] = useState({ id: 2, title: "Whitelist", addDescription: 'Add users you wish to continue following that were followed by SproutySocial. We will never unfollow anyone you manually followed.' })
+  const [pageProp, setPageProp] = useState({ id: 2, title: "Whitelist", addDescription: `Add users you wish to continue following that were followed by ${SITENAME}. We will never unfollow anyone you manually followed.` })
   const [showPageModal, setShowPageModal] = useState(false)
   const [targetingAccounts, setTargetingAccounts] = useState([]);
   const [addSuccess, setAddSuccess] = useState(false);
@@ -1550,7 +1550,7 @@ const WhiteListCompt = ({ user, userId, setMobileAdd }) => {
               }}>
                 <div className="font-bold font-MontserratBold text-[26px] flex items-center cursor-pointer h-[60px] rounded-[10px] px-6 hover:bg-[#f8f8f8]"
                   onClick={() => {
-                    setPageProp({ id: 2, title: "Whitelist", addDescription: 'Add users you wish to continue followingthat were followed by SproutySocial. We will never unfollow anyone you manually followed.' })
+                    setPageProp({ id: 2, title: "Whitelist", addDescription: `Add users you wish to continue followingthat were followed by ${SITENAME}. We will never unfollow anyone you manually followed.` })
                     setShowPageModal(false)
                   }}>
                   Whitelist

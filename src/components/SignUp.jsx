@@ -4,6 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { getRefCode } from "../helpers";
 import { supabase } from "../supabaseClient";
 import AlertModal from "./AlertModal";
+import { SITENAME, LOGO_WITH_NAME } from "../config";
 // import { BsFacebook } from "react-icons/bs";
 
 export default function SignUp() {
@@ -112,12 +113,13 @@ export default function SignUp() {
 
     <div id="affiliateScript"></div>
 
-    <div className="flex flex-col justify-center items-center h-screen">
+    <div className="flex flex-col items-center justify-center h-screen">
       <div className="p-5 md:p-10 md:shadow-lg rounded-[10px] w-full md:w-[458px]">
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col items-center justify-center">
           {/* <img className="w-48 h-40 mt-10 lg:mt-14" src={sproutyLogo} alt="Vizzy Social" /> */}
           <div className="font-MADEOKINESANSPERSONALUSE text-[28px]">
-            <img src="/sproutysocial-light.svg" alt="" className="w-[220px]" />
+            {/* <img src="/sproutysocial-light.svg" alt="" className="w-[220px]" /> */}
+            <img src={{ LOGO_WITH_NAME }} alt="logo" className="max-w-[220px] h-[60px]" />
             {/* <img src="/LogoSprouty2.svg" alt="" className="w-[220px]" /> */}
             {/* <strong className="text-[25px] text-left">SPROUTYSOCIAL</strong> */}
           </div>
@@ -125,11 +127,11 @@ export default function SignUp() {
 
           <h5 className="font-semibold text-[2rem] text-center text-black font-MontserratSemiBold mt-[30px]">Partner With Us</h5>
           {/* <p className="text-center text-[0.75rem] font-MontserratRegular text-[#333]">Start growing <span className="font-bold">~1-10k</span> real and targeted Instagram <br /><span className="font-bold">followers</span> every month.</p> */}
-          <p className="text-center text-[0.8rem] mt-2 mb-6 font-MontserratRegular text-black max-w-[320px]">Join more than <span className="font-bold">25,000</span> users that trust SproutySocial to grow on Instagram. <br className="md:hidden" /> Create an account.</p>
+          <p className="text-center text-[0.8rem] mt-2 mb-6 font-MontserratRegular text-black max-w-[320px]">Join more than <span className="font-bold">25,000</span> users that trust {SITENAME} to grow on Instagram. <br className="md:hidden" /> Create an account.</p>
         </div>
 
         <form action="" className="flex flex-col items-center justify-start" onSubmit={handleSignUp}>
-          <div className="form-outline mb-3">
+          <div className="mb-3 form-outline">
             <input
               type="text"
               id="form2Example1"
@@ -139,7 +141,7 @@ export default function SignUp() {
               onChange={({ target }) => setFullName(target.value)}
             />
           </div>
-          <div className="form-outline mb-3">
+          <div className="mb-3 form-outline">
             <input
               type="email"
               id="form2Example1"
@@ -182,7 +184,7 @@ export default function SignUp() {
 
         {/* signup with oAuth */}
 
-        {/* <div className="hidden del-flex justify-center items-center relative my-8">
+        {/* <div className="relative items-center justify-center hidden my-8 del-flex">
           <hr className="w-full" />
           <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] px-4 bg-white text-black">OR</div>
         </div>

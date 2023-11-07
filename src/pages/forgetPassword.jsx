@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { supabase } from "../supabaseClient";
+import { SITENAME } from "../config";
 
 export default function ForgetPassword() {
     const [page, setPage] = useState(0)
@@ -48,7 +49,7 @@ export default function ForgetPassword() {
             <div className="p-5 rounded-lg shadow-lg">
                 <div className="flex flex-col items-center justify-center pb-10">
                     {/* <img className="w-48 h-40 mt-10 lg:mt-14" src={sproutyLogo} alt="Vizzy Social" /> */}
-                    <div className="font-MADEOKINESANSPERSONALUSE text-[28px]"><strong className="text-[25px] text-left uppercase">Vizzysocial</strong></div>
+                    <div className="font-MADEOKINESANSPERSONALUSE text-[28px]"><strong className="text-[25px] text-left uppercase">{SITENAME}</strong></div>
                     <hr className="mb-7 w-full border-[#ef5f3c]" />
 
                     <h5 className="font-bold text-[2.625rem] text-black font-MADEOKINESANSPERSONALUSE">Forgot Password?</h5>

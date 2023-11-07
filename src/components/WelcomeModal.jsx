@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Modal from "react-bootstrap/Modal";
+// import Modal from "react-bootstrap/Modal";
 import { FaTimesCircle } from "react-icons/fa";
 import "../styles/welcomeModal.css"
 
@@ -62,6 +62,7 @@ export default function WelcomeModal({ show, onHide, setShowWelcomeModal, showWe
       <div className="flex flex-col items-center gap-4 px-2 pt-3 pb-5">
         <div className="flex items-center justify-center">
           <img src="/sproutysocial-light.svg" alt="logo" className="h-[40px]" />
+          <img src={LOGO_WITH_NAME} alt="" className="max-w-[220px] h-[60px]" />
         </div>
 
         // <h1 className="text-3xl font-bold font-MontserratBold">HOW TO START</h1> 

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import { RefreshModal } from '../../../dashboard'
 import { supabase } from '../../../supabaseClient'
 import { messageSlack } from '../../../helpers'
-import { LOGO } from '../../../config'
+import { LOGO, LOGO_WITH_NAME } from '../../../config'
 
 export default function Header({ setUsers, searchTerm, setSearchTerm, setLoading }) {
     const [openRefreshModal, setOpenRefreshModal] = useState(false)
@@ -91,7 +91,8 @@ export default function Header({ setUsers, searchTerm, setSearchTerm, setLoading
                 <Link to={"/"} className="navbar-brand" href="#">
                     <div className="font-MADEOKINESANSPERSONALUSE text-[20px] md:text-[25px]">
                         <img alt="" className="md:hidden w-[36px] h-[36px]" src={LOGO} />
-                        <img src="/sproutysocial-light.svg" alt="" className="hidden md:inline  w-[346px]" />
+                        {/* <img src="/sproutysocial-light.svg" alt="" className="hidden md:inline  w-[346px]" /> */}
+                        <img src={LOGO_WITH_NAME} alt="logo" className="hidden md:inline max-w-[220px] h-[60px]" />
                     </div>
                 </Link>
 
