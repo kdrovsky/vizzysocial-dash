@@ -97,7 +97,7 @@ const SettingsModal = (props) => {
               <div className="w-5 h-5 rounded-full bg-green-600 absolute bottom-[10px] right-[10px]"></div>
             </div>
             <h2 className='font-bold text-[#757575] text-[24px] my-1 font-MontserratBold'>{user?.full_name}</h2>
-            <h2 className='font-bold text-[#1b89ff] text-[20px] my-1 font-MontserratBold'>@{user?.username}</h2>
+            <h2 className='font-bold text-primary text-[20px] my-1 font-MontserratBold'>@{user?.username}</h2>
             <div className="relative w-full md:w-[403px] flex justify-center mt-4">
               <div className="flex items-center justify-center gap-2 rounded-[10px] py-4 px-4 text-[1.25rem] border shadow-[inset_0_0px_2px_rgba(0,0,0,0.4)] ">
                 <input

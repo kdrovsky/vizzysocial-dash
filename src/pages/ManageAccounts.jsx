@@ -154,7 +154,7 @@ export default function ManageAccounts() {
                                                     <div className="text-[12px] lg:text-[18px] font-bold">Instagram Account</div>
                                                 </div>
                                                 <div className="lg:mt-5 text-[16px] lg:text-[24px] font-bold">{account?.full_name}</div>
-                                                <div className="text-[#1B89FF] text-[12px] lg:text-[18px] leading-[0.8] font-bold">@{account?.username}</div>
+                                                <div className="text-primary text-[12px] lg:text-[18px] leading-[0.8] font-bold">@{account?.username}</div>
                                             </div>
                                         </div>
                                         <div className="lg:hidden w-[32px] h-[32px] rounded-lg bg-[#1B89FF] grid place-items-center cursor-pointer relative z-10" onClick={() => {

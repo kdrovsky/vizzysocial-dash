@@ -56,7 +56,7 @@ export default function AdminLogin() {
         <div className="flex flex-col justify-center items-center">
             <div className="shadow-2-strong p-5">
                 <div className="flex flex-col justify-center items-center pb-10">
-                    <img className="w-48 h-40 mt-10 lg:mt-14" src={sproutyLogo} alt="Vizzy Social" />
+                    <img className="w-48 h-40 mt-10 lg:mt-14" src={sproutyLogo} alt="Wizzy Social" />
                     <h5 className="font-bold text-[40px] text-gray20">Login to dashboard</h5>
                 </div>
                 <form action="" className="flex flex-col items-center justify-start">
@@ -80,12 +80,12 @@ export default function AdminLogin() {
                             placeholder="Password"
                             onChange={({ target }) => setPassword(target.value)}
                         /> <br />
-                        <Link to="#"><span className="text-primaryblue font-extrabold text-sm opacity-40 mt-2">Forgot Password?</span></Link>
+                        <Link to="#"><span className="text-primary font-extrabold text-sm opacity-40 mt-2">Forgot Password?</span></Link>
                     </div>
 
                     <button
                         type="button"
-                        className="bg-primaryblue rounded-[10px] py-2 px-6 text-slate-50 font-semibold text-base mb-1"
+                        className="bg-primary rounded-[10px] py-2 px-6 text-slate-50 font-semibold text-base mb-1"
                         onClick={() => handleLogin()}
                     >
                         Sign In Now

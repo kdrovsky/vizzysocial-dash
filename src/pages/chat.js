@@ -165,7 +165,7 @@ export default function Chat() {
               return <option key={option} value={option ?? ''}>{option ?? ''}</option>
             })}
           </select>
-          <div className={`${selected === 'SELECT' || selected === '' ? 'bg-gray-600 cursor-not-allowed' : 'bg-[#ef5f3c] cursor-pointer'} w-full md:w-32 mx-auto py-4 px-6 text-white font-bold rounded-md flex justify-center`} onClick={() => send()}>
+          <div className={`${selected === 'SELECT' || selected === '' ? 'bg-gray-600 cursor-not-allowed' : 'bg-[#D81159] cursor-pointer'} w-full md:w-32 mx-auto py-4 px-6 text-white font-bold rounded-md flex justify-center`} onClick={() => send()}>
             send
           </div>
         </div>

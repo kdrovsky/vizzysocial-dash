@@ -116,14 +116,14 @@ export default function SignUp() {
     <div className="flex flex-col items-center justify-center h-screen">
       <div className="p-5 md:p-10 md:shadow-lg rounded-[10px] w-full md:w-[458px]">
         <div className="flex flex-col items-center justify-center">
-          {/* <img className="w-48 h-40 mt-10 lg:mt-14" src={sproutyLogo} alt="Vizzy Social" /> */}
+          {/* <img className="w-48 h-40 mt-10 lg:mt-14" src={sproutyLogo} alt="Wizzy Social" /> */}
           <div className="font-MADEOKINESANSPERSONALUSE text-[28px]">
             {/* <img src="/sproutysocial-light.svg" alt="" className="w-[220px]" /> */}
             <img src={{ LOGO_WITH_NAME }} alt="logo" className="max-w-[220px] h-[60px]" />
             {/* <img src="/LogoSprouty2.svg" alt="" className="w-[220px]" /> */}
             {/* <strong className="text-[25px] text-left">SPROUTYSOCIAL</strong> */}
           </div>
-          <hr className="mb-7 w-full border-[#ef5f3c]" />
+          <hr className="mb-7 w-full border-[#D81159]" />
 
           <h5 className="font-semibold text-[2rem] text-center text-black font-MontserratSemiBold mt-[30px]">Partner With Us</h5>
           {/* <p className="text-center text-[0.75rem] font-MontserratRegular text-[#333]">Start growing <span className="font-bold">~1-10k</span> real and targeted Instagram <br /><span className="font-bold">followers</span> every month.</p> */}
@@ -167,7 +167,7 @@ export default function SignUp() {
             type="submit"
             className="text-white font-MontserratSemiBold text-[16px] mt-6 mb-2 rounded-[5px] h-[52px] px-4 w-72 md:w-80 font-semibold"
             style={{
-              backgroundColor: '#ef5f3c',
+              backgroundColor: '#D81159',
               color: 'white',
               boxShadow: '0 10px 30px -12px rgb(255 132 102 / 47%)'
             }}
@@ -178,7 +178,7 @@ export default function SignUp() {
 
         <div className="text-center">
           <p className="text-sm text-black font-MontserratRegular">
-            Already have an account? <Link to="/login"><span className="font-MontserratSemiBold text-[#1b89ff]">Sign in</span></Link>
+            Already have an account? <Link to="/login"><span className="font-MontserratSemiBold text-primary">Sign in</span></Link>
           </p>
         </div>
 
@@ -195,7 +195,7 @@ export default function SignUp() {
             type="button"
             className="flex items-center justify-center gap-2 font-MontserratSemiBold text-[16px] rounded-[5px] h-[52px] px-6 w-72 md:w-80 font-semibold bg-white text-black"
             style={{
-              border: '1px solid #ef5f3c',
+              border: '1px solid #D81159',
               color: 'white',
               boxShadow: '0 10px 30px -12px rgb(255 132 102 / 47%)'
             }}
@@ -211,7 +211,7 @@ export default function SignUp() {
             type="button"
             className="flex items-center justify-center gap-2 font-MontserratSemiBold text-[16px] rounded-[5px] h-[52px] px-6 w-72 md:w-80 font-semibold bg-white text-black"
             style={{
-              border: '1px solid #ef5f3c',
+              border: '1px solid #D81159',
               color: 'white',
               boxShadow: '0 10px 30px -12px rgb(255 132 102 / 47%)'
             }}

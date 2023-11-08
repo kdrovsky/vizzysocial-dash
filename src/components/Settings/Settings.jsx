@@ -103,7 +103,7 @@ export default function Settings() {
               <div className="mb-2 border-b md:mb-0 md:border-b-0">Full Name</div>
               <div className="flex items-center justify-between gap-3 md:justify-end">
                 <div className="text-[#757575]">{user?.full_name}</div>
-                <div className="text-[#1b89ff] cursor-pointer"
+                <div className="text-primary cursor-pointer"
                   onClick={() => {
                     setShowModal(true);
                     setRefresh(!refresh)
@@ -116,7 +116,7 @@ export default function Settings() {
               <div className="mb-2 border-b md:mb-0 md:border-b-0">Email</div>
               <div className="flex flex-col md:flex-row md:items-center md:gap-3">
                 <div className="text-[#757575]">{user?.email}</div>
-                <div className="text-[#1b89ff] cursor-pointer"
+                <div className="text-primary cursor-pointer"
                   onClick={() => {
                     setShowModal(true);
                     setRefresh(!refresh)
@@ -129,7 +129,7 @@ export default function Settings() {
               <div className="mb-2 border-b md:mb-0 md:border-b-0">Password</div>
               <div className="flex items-center justify-between gap-3 md:justify-end">
                 <div className="text-[#757575]">************</div>
-                <div className="text-[#1b89ff] cursor-pointer"
+                <div className="text-primary cursor-pointer"
                   onClick={() => {
                     setShowModal(true);
                     setRefresh(!refresh)
@@ -142,7 +142,7 @@ export default function Settings() {
               <div className="mb-2 border-b md:mb-0 md:border-b-0">Phone number</div>
               <div className="flex items-center justify-between gap-3 md:justify-end">
                 <div className="text-[#757575]">{user?.phone}</div>
-                <div className="text-[#1b89ff] cursor-pointer"
+                <div className="text-primary cursor-pointer"
                   onClick={() => {
                     setShowModal(true);
                     setRefresh(!refresh)
@@ -155,7 +155,7 @@ export default function Settings() {
               <div className="mb-2 border-b md:mb-0 md:border-b-0">Subscription</div>
               <div className="flex items-center justify-between gap-3 md:justify-end">
                 <div className="text-[#757575]">Active</div>
-                <div className="text-[#1b89ff] cursor-pointer" onClick={() => setCancelModal(true)}>Cancel</div>
+                <div className="text-primary cursor-pointer" onClick={() => setCancelModal(true)}>Cancel</div>
               </div>
             </div>
           </div>
@@ -185,7 +185,7 @@ export default function Settings() {
                     {!(['visa', 'mastercard', 'maestro'].includes(chargebeeCustomerData?.card?.card_type)) && <>({chargebeeCustomerData?.card?.card_type})</>}
                     <span className="">card ending with {chargebeeCustomerData?.card?.last4}</span>
                   </div>
-                  <div className="text-[#1b89ff] cursor-pointer"
+                  <div className="text-primary cursor-pointer"
                     onClick={() => {
                       setShowModal(true);
                       setRefresh(!refresh)

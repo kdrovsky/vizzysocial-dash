@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <div className="container text-center mt-5">
       <h1>Grow your Instagram with 100% Real Followers</h1>
-      <button className="text-lg font-normal w-[300px] py-3 text-white bg-primaryblue mt-5 rounded-xl" onClick={() => navigate("/signUp") } >START FREE TRIAL</button>
+      <button className="text-lg font-normal w-[300px] py-3 text-white bg-primary mt-5 rounded-xl" onClick={() => navigate("/signUp") } >START FREE TRIAL</button>
     </div>
   );
 }

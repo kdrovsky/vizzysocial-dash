@@ -239,7 +239,7 @@ export default function OnboardingSearchBox({ user, currentUsername }) {
     <div className="h-[calc(100vh-75px)] lg:h-screen mt-[75px] lg:mt-0 lg:py-[60px] 2xl:py-[100px] lg:px-[100px] bg-[#f8f8f8]">
       <div className="w-full max-w-full lg:max-w-[960px] xl:max-w-[1070px] h-[789px] my-auto 2xl:grid max-h-full lg:mx-auto relative rounded-[20px] shadow-[0_5px_10px_#0a17530d] bg-white">
         <div className="absolute -top-10 left-0 hidden lg:flex items-center gap-2 font-[600] font-MontserratRegular">
-          <div className="text-[#1B89FF]">Select Your Account</div>
+          <div className="text-primary">Select Your Account</div>
           <div className="">{`>`}</div>
           <div className="">Complete Setup</div>
           <div className="">{`>`}</div>
@@ -249,7 +249,7 @@ export default function OnboardingSearchBox({ user, currentUsername }) {
         <div className="flex flex-col justify-between h-full px-5 pb-4 lg:justify-center lg:items-center text-start lg:text-center lg:px-0">
           <div className="block lg:flex flex-col lg:justify-center lg:items-center pb-[80px]">
             <h1 className='font-bold text-black font-MontserratBold text-[26px] pb-3'>Search your account</h1>
-            <p className='text-[0.875rem] font-MontserratRegular lg:px-[100px]'>Find your Instagram account and start growing followers with <br className='hidden lg:block' /> Vizzy Social</p>
+            <p className='text-[0.875rem] font-MontserratRegular lg:px-[100px]'>Find your Instagram account and start growing followers with <br className='hidden lg:block' /> Wizzy Social</p>
 
             <div className="flex flex-col justify-between mt-3 lg:block">
               <div className="flex flex-col items-center justify-between h-full w-full lg:h-fit lg:w-[411px] relative" ref={parentRef}>
@@ -358,7 +358,7 @@ export default function OnboardingSearchBox({ user, currentUsername }) {
                   })}
                 </div>}
 
-                <button className={`${selected ? 'bg-[#ef5f3c]' : 'bg-[#C4C4C4]'} hidden lg:block mt-[40px] w-full lg:w-[350px] h-[60px] py-[15px] rounded-[10px] text-[1.125rem] font-semibold text-white ${processing && 'cursor-wait bg-[#ffa58e]'}`}
+                <button className={`${selected ? 'bg-[#D81159]' : 'bg-[#C4C4C4]'} hidden lg:block mt-[40px] w-full lg:w-[350px] h-[60px] py-[15px] rounded-[10px] text-[1.125rem] font-semibold text-white ${processing && 'cursor-wait bg-[#ffa58e]'}`}
                   onClick={() => { (selected && !processing) && handleSubmit() }}
                 >
                   {processing ? <span className="animate-pulse">Processing your account…</span> : <div className='flex items-center justify-center gap-2'>Select Account <FaAngleRight size={25} /></div>}
@@ -368,7 +368,7 @@ export default function OnboardingSearchBox({ user, currentUsername }) {
           </div>
 
           <div className="fixed left-0 w-full px-5 bottom-6">
-            <button className={`${selected ? 'bg-[#ef5f3c]' : 'bg-[#C4C4C4]'} lg:hidden w-full lg:w-[350px] h-[50px] py-[15px] rounded-[10px] text-[.8rem] font-semibold text-white ${processing && 'cursor-wait bg-[#ffa58e]'}`}
+            <button className={`${selected ? 'bg-[#D81159]' : 'bg-[#C4C4C4]'} lg:hidden w-full lg:w-[350px] h-[50px] py-[15px] rounded-[10px] text-[.8rem] font-semibold text-white ${processing && 'cursor-wait bg-[#ffa58e]'}`}
               onClick={() => { (selected && !processing) && handleSubmit() }}
             >
               {processing ? <span className="animate-pulse">Processing your account…</span> : <div className='flex items-center justify-center gap-2'>Select Account <FaAngleRight size={20} /></div>}

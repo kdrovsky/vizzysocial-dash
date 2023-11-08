@@ -227,7 +227,7 @@ export default function ConnectAccount({ show, setShow, user, message, setMessag
                             type="submit"
                             className="text-white font-MontserratSemiBold text-[16px] mt-6 mb-2 rounded-[5px] py-2 px-6 h-[52px] w-72 md:w-80 font-semibold"
                             style={{
-                                backgroundColor: '#ef5f3c',
+                                backgroundColor: '#D81159',
                                 color: 'white',
                                 boxShadow: '0 10px 30px -12px rgb(255 132 102 / 47%)',
                             }}
@@ -246,7 +246,7 @@ export default function ConnectAccount({ show, setShow, user, message, setMessag
                                 type="submit"
                                 className="text-white font-MontserratSemiBold text-[16px] mt-6 mb-2 rounded-[5px] py-2 px-6 h-[52px] w-72 md:w-80 font-semibold"
                                 style={{
-                                    backgroundColor: '#ef5f3c',
+                                    backgroundColor: '#D81159',
                                     color: 'white',
                                     boxShadow: '0 10px 30px -12px rgb(255 132 102 / 47%)',
                                 }}
@@ -272,14 +272,14 @@ export default function ConnectAccount({ show, setShow, user, message, setMessag
                         <div className="flex justify-center gap-3 my-4">
                             <button
                                 type="submit"
-                                className="text-white bg-[#ef5f3c] font-MontserratSemiBold text-[16px] rounded-[5px] px-6 h-[40px] w-fit font-semibold"
+                                className="text-white bg-[#D81159] font-MontserratSemiBold text-[16px] rounded-[5px] px-6 h-[40px] w-fit font-semibold"
                                 style={{ boxShadow: '0 10px 30px -12px rgb(255 132 102 / 47%)' }}
                             >{loading ? <p className='animate-pulse'>sending...</p> : 'Confirm'}
                             </button>
 
                             <button
                                 type="button"
-                                className="text-white bg-[#ef5f3c] font-MontserratSemiBold text-[16px] rounded-[5px] px-6 h-[40px] w-fit font-semibold"
+                                className="text-white bg-[#D81159] font-MontserratSemiBold text-[16px] rounded-[5px] px-6 h-[40px] w-fit font-semibold"
                                 style={{ boxShadow: '0 10px 30px -12px rgb(255 132 102 / 47%)' }}
                                 onClick={() => {setDrc(true); setMessage({...message, code: 'default'})}}
                             >{loading ? <p className='animate-pulse'>sending...</p> : `I didn't receive the code`}
@@ -303,14 +303,14 @@ export default function ConnectAccount({ show, setShow, user, message, setMessag
                         <div className="flex justify-center gap-3 my-4">
                             <button
                                 type="submit"
-                                className="text-white bg-[#ef5f3c] font-MontserratSemiBold text-[16px] rounded-[5px] px-6 h-[40px] w-fit font-semibold"
+                                className="text-white bg-[#D81159] font-MontserratSemiBold text-[16px] rounded-[5px] px-6 h-[40px] w-fit font-semibold"
                                 style={{ boxShadow: '0 10px 30px -12px rgb(255 132 102 / 47%)' }}
                             >{loading ? <p className='animate-pulse'>sending...</p> : 'Confirm'}
                             </button>
 
                             <button
                                 type="button"
-                                className="text-white bg-[#ef5f3c] font-MontserratSemiBold text-[16px] rounded-[5px] px-6 h-[40px] w-fit font-semibold"
+                                className="text-white bg-[#D81159] font-MontserratSemiBold text-[16px] rounded-[5px] px-6 h-[40px] w-fit font-semibold"
                                 style={{ boxShadow: '0 10px 30px -12px rgb(255 132 102 / 47%)' }}
                                 onClick={() => setMessage({ ...message, code: "verification method 2FA on" })}
                             >Go back
@@ -325,7 +325,7 @@ export default function ConnectAccount({ show, setShow, user, message, setMessag
                         <div className="flex justify-center w-full gap-2">
                             <button
                                 type="button"
-                                className="text-white bg-[#ef5f3c] font-MontserratSemiBold text-[16px] rounded-[5px] py-2 px-6 h-[52px] w-fit font-semibold"
+                                className="text-white bg-[#D81159] font-MontserratSemiBold text-[16px] rounded-[5px] py-2 px-6 h-[52px] w-fit font-semibold"
                                 style={{ boxShadow: '0 10px 30px -12px rgb(255 132 102 / 47%)' }}
                                 onClick={() => vMethod("thisWasMe", "true")}
                             >{loading ? <p className='animate-pulse'>sending...</p> : 'I clicked this was me'}
@@ -344,7 +344,7 @@ export default function ConnectAccount({ show, setShow, user, message, setMessag
                         <div className="flex justify-center w-full gap-2">
                             <button
                                 type="button"
-                                className="text-white bg-[#ef5f3c] font-MontserratSemiBold text-[16px] rounded-[5px] py-2 px-6 h-[52px] w-fit font-semibold"
+                                className="text-white bg-[#D81159] font-MontserratSemiBold text-[16px] rounded-[5px] py-2 px-6 h-[52px] w-fit font-semibold"
                                 style={{ boxShadow: '0 10px 30px -12px rgb(255 132 102 / 47%)' }}
                                 onClick={() => vMethod('method', 'email')}
                             >Email
@@ -352,7 +352,7 @@ export default function ConnectAccount({ show, setShow, user, message, setMessag
 
                             <button
                                 type="button"
-                                className="text-white bg-[#ef5f3c] font-MontserratSemiBold text-[16px] rounded-[5px] py-2 px-6 h-[52px] w-fit font-semibold"
+                                className="text-white bg-[#D81159] font-MontserratSemiBold text-[16px] rounded-[5px] py-2 px-6 h-[52px] w-fit font-semibold"
                                 style={{ boxShadow: '0 10px 30px -12px rgb(255 132 102 / 47%)' }}
                                 onClick={() => vMethod('method', 'sms')}
                             >SMS
@@ -365,7 +365,7 @@ export default function ConnectAccount({ show, setShow, user, message, setMessag
                         <div className="flex flex-col items-center justify-center w-full gap-2">
                             <button
                                 type="button"
-                                className="text-white bg-[#ef5f3c] font-MontserratSemiBold text-[16px] rounded-[5px] py-2 px-6 h-[52px] w-fit font-semibold"
+                                className="text-white bg-[#D81159] font-MontserratSemiBold text-[16px] rounded-[5px] py-2 px-6 h-[52px] w-fit font-semibold"
                                 style={{ boxShadow: '0 10px 30px -12px rgb(255 132 102 / 47%)' }}
                                 onClick={() => vMethod('approve', "true")}
                             >I approved the login
@@ -373,7 +373,7 @@ export default function ConnectAccount({ show, setShow, user, message, setMessag
 
                             <button
                                 type="button"
-                                className="text-white bg-[#ef5f3c] font-MontserratSemiBold text-[16px] rounded-[5px] py-2 px-6 h-[52px] w-fit font-semibold"
+                                className="text-white bg-[#D81159] font-MontserratSemiBold text-[16px] rounded-[5px] py-2 px-6 h-[52px] w-fit font-semibold"
                                 style={{ boxShadow: '0 10px 30px -12px rgb(255 132 102 / 47%)' }}
                                 onClick={() => vMethod('sms', "true")}
                             >Send me the code on SMS
@@ -382,7 +382,7 @@ export default function ConnectAccount({ show, setShow, user, message, setMessag
                             <button
                                 onClick={() => {setBCode(true); setMessage({...message, code: 'default'})}}
                                 type="button"
-                                className="text-white bg-[#ef5f3c] font-MontserratSemiBold text-[16px] rounded-[5px] py-2 px-6 h-[52px] w-fit font-semibold"
+                                className="text-white bg-[#D81159] font-MontserratSemiBold text-[16px] rounded-[5px] py-2 px-6 h-[52px] w-fit font-semibold"
                                 style={{ boxShadow: '0 10px 30px -12px rgb(255 132 102 / 47%)' }}
                             >I know my backup code
                             </button>
@@ -397,7 +397,7 @@ export default function ConnectAccount({ show, setShow, user, message, setMessag
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                <span className="text-[#1b89ff] font-MontserratSemiBold font-[600] text-[14px] mt-3">
+                                <span className="text-primary font-MontserratSemiBold font-[600] text-[14px] mt-3">
                                     Reset it here
                                 </span>
                             </a>

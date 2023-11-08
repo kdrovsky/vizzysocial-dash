@@ -228,7 +228,7 @@ export default function TargetingFilterModal(props, { min, max }) {
               </div>
 
               <div>
-                <button className="bg-secondaryblue font-MontserratSemiBold w-full mt-10 rounded-[10px] py-4 text-base text-white font-bold"
+                <button className="bg-secondary font-MontserratSemiBold w-full mt-10 rounded-[10px] py-4 text-base text-white font-bold"
                   onClick={handleSaveAndClose}
                 >
                   Save And Close

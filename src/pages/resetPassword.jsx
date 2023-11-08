@@ -27,9 +27,9 @@ export default function ResetPassword() {
         <div className="flex flex-col items-center justify-center h-screen">
             <div className="p-5 rounded-lg shadow-lg">
                 <div className="flex flex-col items-center justify-center pb-10">
-                    {/* <img className="w-48 h-40 mt-10 lg:mt-14" src={sproutyLogo} alt="Vizzy Social" /> */}
+                    {/* <img className="w-48 h-40 mt-10 lg:mt-14" src={sproutyLogo} alt="Wizzy Social" /> */}
                     <div className="font-MADEOKINESANSPERSONALUSE text-[28px]"><strong className="text-[25px] text-left uppercase">{SITENAME}</strong></div>
-                    <hr className="mb-7 w-full border-[#ef5f3c]" />
+                    <hr className="mb-7 w-full border-[#D81159]" />
 
                     <h5 className="font-bold text-[2.625rem] text-black font-MADEOKINESANSPERSONALUSE">Forgot Password?</h5>
                     <p className="text-center text-[0.75rem] font-MontserratRegular text-[#333] max-w-[320px]">Enter your new password below to reset your password.</p>
@@ -62,7 +62,7 @@ export default function ResetPassword() {
                         type="submit"
                         className="text-white font-MontserratSemiBold text-[16px] mt-[14px] mb-[12px] rounded-[5px] py-2 px-6 h-[52px] w-80 font-semibold"
                         style={{
-                            backgroundColor: '#ef5f3c',
+                            backgroundColor: '#D81159',
                             color: 'white',
                             boxShadow: '0 20px 30px -12px rgb(255 132 102 / 47%)'
                         }}
@@ -73,7 +73,7 @@ export default function ResetPassword() {
 
                 <div className="text-center font-MontserratSemiBold">
                     <p className="font-bold text-sm text-[#333]">
-                        Go back to <Link to="/SignUp"><span className="text-[#1b89ff]">Sign Up</span></Link>
+                        Go back to <Link to="/SignUp"><span className="text-primary">Sign Up</span></Link>
                     </p>
                 </div>
                 <br /><br />

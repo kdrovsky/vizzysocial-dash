@@ -130,7 +130,7 @@ export default function Admin() {
           {reading && (<Spinner animation="border" />)}
         </div>
 
-        <button className={`${files.length > 0 ? 'bg-secondaryblue' : 'bg-gray-600'} w-full mt-4 rounded-[10px] py-4 text-base text-white font-bold`}
+        <button className={`${files.length > 0 ? 'bg-secondary' : 'bg-gray-600'} w-full mt-4 rounded-[10px] py-4 text-base text-white font-bold`}
           onClick={handleUploadSessionFile}
         >
           {Loading ? "Loading " : "Upload"}

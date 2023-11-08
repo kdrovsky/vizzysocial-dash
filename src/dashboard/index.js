@@ -816,7 +816,7 @@ export const Chargebee = ({ k, user, setShowChargebee }) => {
   const [parentRef, isClickedOutside] = useClickOutside();
   const [message, setMessage] = useState('')
 
-  const baseUrl = 'https://vizzysocial-api.up.railway.app'
+  const baseUrl = 'https://wizzysocial-api.up.railway.app'
   // console.log(user);
   useEffect(() => {
     const fetch = async () => {

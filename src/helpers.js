@@ -383,7 +383,7 @@ export function getRefCode() {
   var refParam = urlParams.get('ref');
   if (refParam) {
     return refParam
-    // var newUrl = "https://app.vizzysocial.com/signup/?ref=" + refParam;
+    // var newUrl = "https://app.wizzysocial.com/signup/?ref=" + refParam;
     // var signupLink = document.getElementById('signup');
     // if (signupLink) {
     //   signupLink.href = newUrl;

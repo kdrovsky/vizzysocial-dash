@@ -122,14 +122,14 @@ export default function Login() {
     <div className="flex flex-col items-center justify-center h-screen">
       <div className="p-5 md:p-10 md:shadow-lg rounded-[10px] w-full md:w-[458px]">
         <div className="flex flex-col items-center justify-center">
-          {/* <img className="w-48 h-40 mt-10 lg:mt-14" src={sproutyLogo} alt="Vizzy Social" /> */}
+          {/* <img className="w-48 h-40 mt-10 lg:mt-14" src={sproutyLogo} alt="Wizzy Social" /> */}
           <div className="font-MADEOKINESANSPERSONALUSE text-[28px]">
             {/* <img src="/sproutysocial-light.svg" alt="" className="w-[220px]" /> */}
             <img src={LOGO_WITH_NAME} alt="" className="max-w-[220px] h-[60px]" />
             {/* <img src="/LogoSprouty2.svg" alt="" className="w-[220px]" /> */}
             {/* <strong className="text-[25px] text-left">SPROUTYSOCIAL</strong> */}
           </div>
-          <hr className="mb-7 w-full border-[#ef5f3c]" />
+          <hr className="mb-7 w-full border-[#D81159]" />
 
           <h5 className="font-semibold text-[2rem] text-center text-black font-MontserratSemiBold mt-[30px]">Welcome Back</h5>
           <p className="text-center text-[0.8rem] mt-2 mb-6 font-MontserratRegular text-black max-w-[320px]">Start growing <span className="font-bold">~1-10k</span> real and targeted Instagram <span className="font-bold">followers</span> every month.</p>
@@ -155,14 +155,14 @@ export default function Login() {
               placeholder="Password"
               onChange={({ target }) => setPassword(target.value)}
             /> <br />
-            <Link to="/forget-password"><span className="text-[#1b89ff] font-MontserratSemiBold font-[600] text-[14px] mt-3">Forgot Password?</span></Link>
+            <Link to="/forget-password"><span className="text-primary font-MontserratSemiBold font-[600] text-[14px] mt-3">Forgot Password?</span></Link>
           </div>
 
           <button
             type="submit"
             className="text-white font-MontserratSemiBold text-[16px] mt-6 mb-2 rounded-[5px] py-2 px-6 h-[52px] w-72 md:w-80 font-semibold"
             style={{
-              backgroundColor: '#ef5f3c',
+              backgroundColor: '#D81159',
               color: 'white',
               boxShadow: '0 10px 30px -12px rgb(255 132 102 / 47%)'
             }}
@@ -173,7 +173,7 @@ export default function Login() {
 
         <div className="text-center">
           <p className="text-sm text-black font-MontserratRegular">
-            Don't have an account? <Link to="/SignUp"><span className="font-MontserratSemiBold text-[#1b89ff]">Sign Up</span></Link>
+            Don't have an account? <Link to="/SignUp"><span className="font-MontserratSemiBold text-primary">Sign Up</span></Link>
           </p>
         </div>
 
@@ -190,7 +190,7 @@ export default function Login() {
             type="button"
             className="flex items-center justify-center gap-2 font-MontserratSemiBold text-[16px] rounded-[5px] h-[52px] px-6 w-72 md:w-80 font-semibold bg-white text-black"
             style={{
-              border: '1px solid #ef5f3c',
+              border: '1px solid #D81159',
               color: 'white',
               boxShadow: '0 10px 30px -12px rgb(255 132 102 / 47%)'
             }}
@@ -206,7 +206,7 @@ export default function Login() {
             type="button"
             className="flex items-center justify-center gap-2 font-MontserratSemiBold text-[16px] rounded-[5px] h-[52px] px-6 w-72 md:w-80 font-semibold bg-white text-black"
             style={{
-              border: '1px solid #ef5f3c',
+              border: '1px solid #D81159',
               color: 'white',
               boxShadow: '0 10px 30px -12px rgb(255 132 102 / 47%)'
             }}

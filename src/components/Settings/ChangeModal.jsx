@@ -157,7 +157,7 @@ const FullName = ({ setShowModal, user, setRefresh, refresh }) => {
       <div className="flex flex-col">
         <Modal.Title className="font-bold text-[20px] mb-2 font-MontserratBold text-center">Change Full Name</Modal.Title>
         <p className="font-bold text-base text-[#757575] text-center w-full font-MontserratRegular">
-          Update the full name on your Vizzy Social profile.
+          Update the full name on your Wizzy Social profile.
         </p>
       </div>
 
@@ -255,7 +255,7 @@ const Email = ({ setShowModal, user, setRefresh, refresh }) => {
 
 
         <p className="font-bold text-base text-[#757575] text-center w-full font-MontserratRegular">
-          Update the email address on your Vizzy Social profile.
+          Update the email address on your Wizzy Social profile.
         </p>
         <p className="font-bold text-base text-[#757575] text-center w-full font-MontserratRegular mt-2">
           Current Email Address
@@ -407,7 +407,7 @@ const Phone = ({ setShowModal, user, setRefresh, refresh }) => {
       <div className="flex flex-col">
         <Modal.Title className="font-bold text-[20px] mb-2 font-MontserratBold text-center">Change Phone</Modal.Title>
         <p className="font-bold text-base text-[#757575] text-center w-full font-MontserratRegular">
-          Update the phone number on your Vizzy Social profile.
+          Update the phone number on your Wizzy Social profile.
         </p>
       </div>
 
