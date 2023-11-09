@@ -1105,7 +1105,7 @@ const AddOthers = ({ pageProp, userId, user, addSuccess, setAddSuccess, setMobil
           <div className="flex items-center text-base font-medium text-black border border-black h-[60px] p-[18px] rounded-[10px] w-full outline-none box-border">
             <input
               type="text"
-              placeholder="@accountname"
+              placeholder="@username"
               className="w-full border-none outline-none"
               value={debouncedQuery}
               ref={inputRef}
@@ -1520,7 +1520,11 @@ const TargetingCompt = ({ user, setMobileAdd }) => {
 
 const WhiteListCompt = ({ user, userId, setMobileAdd }) => {
   const [total, setTotal] = useState({ whitelist: 0, blacklist: 0 })
-  const [pageProp, setPageProp] = useState({ id: 2, title: "Whitelist", addDescription: `Add users you wish to continue following that were followed by ${SITENAME}. We will never unfollow anyone you manually followed.` })
+  const [pageProp, setPageProp] = useState({
+    id: 2,
+    title: 'Whitelist',
+    addDescription: `Add users you wish to continue following that were followed by Wizzy Social. We will never unfollow anyone you manually followed.`,
+  });
   const [showPageModal, setShowPageModal] = useState(false)
   const [targetingAccounts, setTargetingAccounts] = useState([]);
   const [addSuccess, setAddSuccess] = useState(false);
