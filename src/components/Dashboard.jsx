@@ -777,7 +777,7 @@ export default function Dashboard() {
                 <img
                   alt=""
                   className="mr-5 w-[42px] h-[42px] rounded-full"
-                  src="/mike2.png"
+                  src="/mike.jpeg"
                 ></img>
                 <div>
                   <div
@@ -805,7 +805,7 @@ export default function Dashboard() {
                   <BsHeadset size={18} className="mr-1" />
                   <span>Schedule A Call</span>
                 </Link>
-                <a href="mailto:analyst@sproutysocial.com" className="bg-[#1b89ff] text-white w-full flex items-center justify-center text-sm font-semibold rounded-[10px] h-[52px] min-h-[52px] cursor-pointer">
+                <a href="mailto:contact@wizzysocial.com" className="bg-[#1b89ff] text-white w-full flex items-center justify-center text-sm font-semibold rounded-[10px] h-[52px] min-h-[52px] cursor-pointer">
                   <BiMessageSquareDots size={18} className="mr-1" />
                   <span>Send An Email</span>
                 </a>
@@ -853,7 +853,7 @@ export default function Dashboard() {
                   <img
                     alt=""
                     className="mr-5 w-[87px] h-[87px] rounded-full"
-                    src="/mike2.png"
+                    src="/mike.jpeg"
                   ></img>
                   <div>
                     <img alt="" className="w-[28px] h-[28px]" src={LOGO} />
@@ -877,7 +877,7 @@ export default function Dashboard() {
                   <BsHeadset size={18} className="mr-1" />
                   <span>Schedule A Call</span>
                 </Link>
-                <a href="mailto:analyst@sproutysocial.com" className="bg-[#1b89ff] text-white w-full flex items-center justify-center text-sm font-semibold rounded-[10px] h-[52px] min-h-[52px] cursor-pointer">
+                <a href="mailto:contact@wizzysocial.com" className="bg-[#1b89ff] text-white w-full flex items-center justify-center text-sm font-semibold rounded-[10px] h-[52px] min-h-[52px] cursor-pointer">
                   <BiMessageSquareDots size={18} className="mr-1" />
                   <span>Send An Email</span>
                 </a>
