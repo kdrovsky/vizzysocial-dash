@@ -41,6 +41,10 @@ const urlEncode = function (data) {
 };
 
 export default function OnboardingSearchBox({ user, currentUsername }) {
+  if (user) {
+    user.agency = true;
+  }
+  console.log(user);
   const [parentRef, isClickedOutside] = useClickOutside();
   const [loadingSpinner, setLoadingSpinner] = useState(false);
   const [processing, setProcessing] = useState(false);
@@ -366,23 +370,25 @@ export default function OnboardingSearchBox({ user, currentUsername }) {
 
           <div className="flex flex-col justify-between h-full px-5 pb-4 lg:justify-center lg:items-center text-start lg:text-center lg:px-0">
             <div className="block lg:flex flex-col lg:justify-center lg:items-center pb-[20px]">
-              {!user?.agency && user?.subscribed === true && <div className="flex flex-col items-center">
-                <button
-                  className={`bg-[#D81159] w-full lg:w-[300px] h-[50px] py-[15px] rounded-[10px] text-[.8rem] font-semibold text-white `}
-                  onClick={() => {
-                    setShowPlanModal(true);
-                  }}
-                >
-                  <div className="flex items-center justify-center gap-2">
-                    Choose Plan
+              {(!user?.agency || user?.subscribed === false) && (
+                <div className="flex flex-col items-center">
+                  <button
+                    className={`bg-[#D81159] w-full lg:w-[300px] h-[50px] py-[15px] rounded-[10px] text-[.8rem] font-semibold text-white `}
+                    onClick={() => {
+                      setShowPlanModal(true);
+                    }}
+                  >
+                    <div className="flex items-center justify-center gap-2">
+                      Choose Plan
+                    </div>
+                  </button>
+                  <div className="bg-[#23df85] py-[5px] px-10 rounded-full text-[12px] font-semibold text-white flex items-center gap-4">
+                    <div className="">{selectedPlan?.name}</div>
+                    <div className="">|</div>
+                    <div className="">{selectedPlanType}</div>
                   </div>
-                </button>
-                <div className="bg-[#23df85] py-[5px] px-10 rounded-full text-[12px] font-semibold text-white flex items-center gap-4">
-                  <div className="">{selectedPlan?.name}</div>
-                  <div className="">|</div>
-                  <div className="">{selectedPlanType}</div>
                 </div>
-              </div>}
+              )}
 
               <h1 className="font-bold text-black font-MontserratBold text-[26px] py-3">
                 Search your account
