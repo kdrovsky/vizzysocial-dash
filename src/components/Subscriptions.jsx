@@ -944,6 +944,52 @@ export const ChargeBeeCard = ({
   };
 
   // const handleCardPay = async (setLoading, userResults, setIsModalOpen, setErrorMsg, user, cardRef, username, navigate, nameOnCard) => {
+  const continueWithoutChargebee = async () => {
+    if (addCard) {
+      await handleAddCard();
+      return;
+    }
+
+    setLoading(true);
+    if (userResults?.name === 'INVALID_USERNAME') {
+      console.log('INVALID_USERNAME');
+      setIsModalOpen(true);
+      setErrorMsg({
+        title: 'Alert',
+        message: 'An error has occured, please try again',
+      });
+      setLoading(false);
+      return;
+    }
+
+    if (user) {
+        let data = {
+          username: userResults?.username,
+          email: user.email,
+          full_name: user.full_name,
+          followers: userResults?.follower_count,
+          profile_pic_url: userResults?.profile_pic_url,
+          following: userResults?.following_count,
+          is_verified: userResults?.is_verified,
+          biography: userResults?.biography,
+          start_time: getStartingDay(),
+          posts: userResults?.media_count,
+          subscribed: true,
+        };
+        await supabase.from('users').update(data).eq('id', user?.id);
+        navigate(`/thankyou`);
+        return;
+    } else {
+      setIsModalOpen(true);
+      setErrorMsg({
+        title: 'Authentication Error',
+        message: 'You have to login to continue',
+      });
+    }
+    setLoading(false);
+  };
+
+  // const handleCardPay = async (setLoading, userResults, setIsModalOpen, setErrorMsg, user, cardRef, username, navigate, nameOnCard) => {
   const handleCardPay = async () => {
     if (process.env.NODE_ENV !== 'production') {
       let data = {
@@ -1194,7 +1240,8 @@ export const ChargeBeeCard = ({
             return;
           }
           // await handleCardPay(setLoading, userResults, setIsModalOpen, setErrorMsg, user, cardRef, username, navigate, nameOnCard);
-          await handleCardPay();
+          // await handleCardPay();
+          continueWithoutChargebee();
         }}
         id="cardForm"
       >
@@ -1255,7 +1302,8 @@ export const ChargeBeeCard = ({
               return;
             }
             // await handleCardPay(setLoading, userResults, setIsModalOpen, setErrorMsg, user, cardRef, username, navigate, nameOnCard);
-            handleCardPay();
+            // handleCardPay();
+            continueWithoutChargebee();
           }}
         >
           <span>
