@@ -52,6 +52,7 @@ export default function Login() {
         // alert('An error occurred, please try again')
         setIsModalOpen(true);
         setErrorMsg({ title: 'Login Error', message: 'An error occurred, please try again' })
+        setLoading(false);
         return;
       }
     }
