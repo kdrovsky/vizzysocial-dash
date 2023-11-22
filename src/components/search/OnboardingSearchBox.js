@@ -366,7 +366,7 @@ export default function OnboardingSearchBox({ user, currentUsername }) {
 
           <div className="flex flex-col justify-between h-full px-5 pb-4 lg:justify-center lg:items-center text-start lg:text-center lg:px-0">
             <div className="block lg:flex flex-col lg:justify-center lg:items-center pb-[20px]">
-              {!user?.agency && <div className="flex flex-col items-center">
+              {!user?.agency && user?.subscribed === true && <div className="flex flex-col items-center">
                 <button
                   className={`bg-[#D81159] w-full lg:w-[300px] h-[50px] py-[15px] rounded-[10px] text-[.8rem] font-semibold text-white `}
                   onClick={() => {
