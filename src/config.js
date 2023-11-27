@@ -5,7 +5,7 @@ export const SITENAME = "WizzySocial"
 export const LOGO = "/logo_without_text_and_tagline.png";
 export const LOGO_WITH_NAME = "/color_logo_on_white.png"
 export const ANALYST_NAME = "Mike P"
-export const EMAIL = "support@WizzySocial.com"
+export const EMAIL = "support@wizzysocial.com"
 
 export const SCRAPER_API_URL = process.env.REACT_APP_SCRAPER_API_URL
 export const X_RAPID_API_KEY = process.env.REACT_APP_X_RAPID_API_KEY
@@ -92,7 +92,7 @@ export const INCORRECT_PASSWORD_TEMPLATE = (full_name, username) => {
 
 <p class="MsoNormal"><span lang="EN">We regret to inform you that the password
 provided for @<b>${username}</b>, to access our service is incorrect. We kindly request
-you to attempt re-logging into your dashboard by following this <a href="http://app.WizzySocial.com"><span style="color:#1155CC">link</span></a>.
+you to attempt re-logging into your dashboard by following this <a href="http://app.wizzysocial.com"><span style="color:#1155CC">link</span></a>.
 Once the correct password is provided, our team will proceed to log in to your
 account within the next 24 hours.</span></p>
 
@@ -165,7 +165,7 @@ export const TWO_FACTOR_TEMPLATE = (full_name, username) => {
         <p class="MsoNormal"><span lang="EN"><o:p> </o:p></span></p>
 
         <p class="MsoNormal"><span lang="EN">After completing the steps above we kindly
-        request you to attempt re-logging into your dashboard by following this <a href="https://app.WizzySocial.com/">link</a></span></p>
+        request you to attempt re-logging into your dashboard by following this <a href="https://app.wizzysocial.com/">link</a></span></p>
 
         <p class="MsoNormal"><span lang="EN"><o:p> </o:p></span></p>
 
@@ -204,7 +204,7 @@ export const NOT_CONNECTED_TEMPLATE = (full_name) => {
 <p class="MsoNormal"><span lang="EN">We would like to bring to your attention that
 you are currently not connected to our service. We kindly request you to
 establish the connection at your earliest convenience by clicking on the
-provided <a href="http://app.WizzySocial.com"><span style="color:#1155CC">link</span></a>.
+provided <a href="http://app.wizzysocial.com"><span style="color:#1155CC">link</span></a>.
 By doing so, we can promptly initiate the growth process for your account.</span></p>
 
 <p class="MsoNormal"><span lang="EN"><o:p>&nbsp;</o:p></span></p>
@@ -308,7 +308,7 @@ export const CHECKING_TEMPLATE = (full_name, username) => {
 
             <p className="MsoNormal" style={{ lineHeight: "150%" }}>After completing the steps above we
             kindly request you to attempt re-logging into your dashboard by following this
-            <a href="app.WizzySocial.com">link</a><o:p /></p>
+            <a href="app.wizzysocial.com">link</a><o:p /></p>
 
             <p className="MsoNormal" style={{ lineHeight: "150%" }}>If you have any concerns or require
             further assistance, please do not hesitate to reach out to us at
