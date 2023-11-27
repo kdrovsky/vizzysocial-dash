@@ -9,8 +9,9 @@ import { ACTIVE_TEMPLATE, CHECKING_TEMPLATE, INCORRECT_PASSWORD_TEMPLATE, LOGO, 
 
 export const calculateLast7DaysGrowth = (sessionData) => {
   if (!sessionData) return
-  const previous7DaysGrowth = sessionData[sessionData.length - 7].profile.followers;
-  const last7DaysGrowth = sessionData[sessionData.length - 1].profile.followers;
+  const previous7DaysGrowth = sessionData[sessionData.length - 7]?.profile?.followers || 0;
+  const last7DaysGrowth =
+    sessionData[sessionData.length - 1]?.profile?.followers || 0;
 
   // Calculate the growth difference and determine if it's positive, negative, or zero
   let growthDifference;

@@ -271,17 +271,28 @@ export const deleteAccount = async (from, id) => {
   // }
 }
 
-export const deleteUserDetails = async (user_id, first_account) => {
-  await deleteUser(user_id, first_account, 'users');
-  await deleteUser(user_id, first_account, 'targeting');
-  await deleteUser(user_id, first_account, 'whitelist');
-  await deleteUser(user_id, first_account, 'blacklist');
+export const deleteUserDetails = async (username, first_account) => {
+  // user_id is provided if first_account is true
+  await deleteUser(username, first_account, 'users');
+  await deleteUser(username, first_account, 'targeting');
+  await deleteUser(username, first_account, 'whitelist');
+  await deleteUser(username, first_account, 'blacklist');
   return 'success'
 }
 
-export const deleteUser = async (user_id, first_account, table) => {
-  const { error } = await supabase.from(table).delete().eq(first_account ? "user_id" : table === 'users' ? "username" : "main_user_username", user_id)
-  console.log(error)
+export const deleteUser = async (username, first_account, table) => {
+  const { error } = await supabase
+    .from(table)
+    .delete()
+    .eq(
+      first_account
+        ? 'user_id'
+        : table === 'users'
+        ? 'username'
+        : 'main_user_username',
+      username
+    );
+  error && console.log(error);
 }
 
 export const getUser = async (uid) => {

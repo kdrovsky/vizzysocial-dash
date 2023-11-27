@@ -44,7 +44,6 @@ export default function OnboardingSearchBox({ user, currentUsername }) {
   if (user) {
     user.agency = true;
   }
-  console.log(user);
   const [parentRef, isClickedOutside] = useClickOutside();
   const [loadingSpinner, setLoadingSpinner] = useState(false);
   const [processing, setProcessing] = useState(false);
